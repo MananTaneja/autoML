@@ -1,0 +1,18 @@
+<Start> := <Pre-Processing> <Algorithm>
+<Pre-Processing> := [<Imputation>] <DimensionalityDefinition>
+<Supervised> := <Nearest Neighbours> | 
+                <Naive Bayes> | 
+                <Decision Trees>| 
+                <LogisticRegression> | 
+                <SVM>
+<score> := <R2> 
+        | <ABS> 
+        | <BAC> 
+        | <AUC> 
+        | <F1 Score>
+<Naive Bayes> :=  GaussianNB 
+                | MultinomialNB 
+<Algorithm> := <Supervised> 
+<affinity> := Euclidean 
+            | Manhattan
+
