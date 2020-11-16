@@ -1,0 +1,1 @@
+python scripts/experiment_manager.py --experiment_name First-Trial --runs 1 --parameters titanicParameters.txt

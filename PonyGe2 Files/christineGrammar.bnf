@@ -1,0 +1,29 @@
+<Start> ::= <Pre-Processing> <Algorithm>
+
+<Pre-Processing> ::= [<Imputation>] <DimensionalityDefinition>
+
+<DimensionalityDefinition> ::= <FeatureSelection> [<FeatureConstruction>] 
+
+<FeatureSelection> ::= <Supervised>
+
+<Supervised> ::= <Nearest Neighbours> | 
+                <Naive Bayes> | 
+                <Decision Trees>| 
+                <LogisticRegression> | 
+#                <SVM>
+
+<score> ::= <F1 Score> |
+            <BAC> |
+            <AUC> 
+
+<Nearest Neighbours> ::= <KNeighborsClassifier> <k> <affinity>
+
+<k> ::= GE_RANGE:sqrt(dataset_n_vars)
+
+<Naive Bayes> ::=  GaussianNB | 
+                   MultinomialNB 
+
+<Algorithm> ::= <Supervised>
+ 
+<affinity> ::= Euclidean | 
+               Manhattan
